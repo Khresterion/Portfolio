@@ -681,6 +681,9 @@ VERSION MOBILE
   .text p {
     display: none;
   }
+  .text h3 {
+    font-size: 1rem;
+  }
   .timeline-heading h4 {
     font-size: 1rem;
   }
