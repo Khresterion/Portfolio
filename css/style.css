@@ -489,22 +489,12 @@ a:focus {
   font-style: italic;
 }
 
-/* WORDCLOUD */
-
 /* FOOTER */
 footer {
   background: #282629;
   padding: 20px 0 40px;
 }
-/* footer .fas {
-  font-size: 25px;
-  margin: 20px;
-  color: #f7faff;
-  height: 30px;
-}
-footer .fas:hover {
-  font-size: 27px;
-} */
+
 footer h5 {
   color: #f7faff;
   font-weight: normal;
@@ -541,6 +531,55 @@ footer h5 {
 }
 
 /* FOOTER SOCIAL ICONS & formulaire de contact desactivé*/
+
+/* footer ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+footer ul li {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 10px;
+  font-size: 28px;
+  transition: 0.5s;
+  box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+}
+footer ul li:nth-child(1) {
+  background: #3b5999;
+}
+footer ul li:nth-child(2) {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+footer ul li:nth-child(3) {
+  background: #333333;
+}
+footer ul li:nth-child(4) {
+  background: #0077b5;
+}
+
+footer ul li:hover {
+  transform: translateY(-15px);
+  cursor: pointer;
+  box-shadow: 0 20px 20px rgb(0, 0, 0, 0.5);
+}
+
+footer ul {
+  padding-left: 0;
+}
 
 /* .footer-icons {
   margin: 0 auto;
