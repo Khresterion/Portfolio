@@ -131,8 +131,9 @@ section .heading h2 {
   background: #ddd;
   box-shadow: -55px -62px 36px -42px #c9c7c7 inset;
 }
-.textbox {
-  height: 700px;
+
+#skills .progress-bar {
+  width: 0;
 }
 
 /* EXPERIENCE */
