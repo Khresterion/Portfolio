@@ -126,17 +126,13 @@ section .heading h2 {
   color: #392d3b;
 }
 #skills .progress {
-  height: auto;
-  margin: 30px 20px;
+  height: 2rem;
+  margin-bottom: 20px;
   background: #ddd;
   box-shadow: -55px -62px 36px -42px #c9c7c7 inset;
 }
-#skills .progress-bar {
-  background: #392d3b;
-}
-#skills .progress h5 {
-  margin-top: 3px;
-  text-shadow: 1px 1px 1px #000;
+.textbox {
+  height: 700px;
 }
 
 /* EXPERIENCE */
