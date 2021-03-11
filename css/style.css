@@ -416,8 +416,15 @@ footer {
 footer h5 {
   color: #f7faff;
   font-weight: normal;
-  letter-spacing: 0.3em;
-  font-family: "audiowide", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+footer h4 {
+  color: #f7faff;
+  font-size: smaller;
+  letter-spacing: 0.2em;
+  text-shadow: 3px 1px 3px rgba(255, 117, 175, 1),
+    -3px -2px 3px rgba(0, 117, 175, 1);
 }
 
 .arrow {
@@ -448,14 +455,13 @@ footer h5 {
   color: #f7faff;
 }
 
-/* FOOTER SOCIAL ICONS & formulaire de contact desactivé*/
+/* --------------
+FOOTER SOCIAL ICONS
+----------------- */
 
-/* footer ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+.socialmedia {
+  margin-bottom: 3rem;
+}
 
 footer ul li {
   display: inline-block;
