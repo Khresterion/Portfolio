@@ -1,18 +1,6 @@
-// let lastScrollTop = 0;
-// navbar = document.getElementById("navbar");
-
-// window.addEventListener("scroll", function () {
-//   const scrollTop =
-//     window.pageTOffset || this.document.documentElement.scrollTop;
-
-//   if (scrollTop > lastScrollTop) {
-//     navbar.style.top = "-50px";
-//   } else {
-//     navbar.style.top = "0";
-//   }
-//   lastScrollTop = scrollTop;
-// });
-
+// -------------
+// BURGER
+// -------------
 $(function () {
   $(".navbar a, footer a").on("click", function (event) {
     event.preventDefault();
@@ -28,7 +16,9 @@ $(function () {
   });
 });
 
-// TYPECRIPT
+// -------------
+// TYPE SCRIPT
+// -------------
 let typed3 = new Typed(".typed", {
   strings: ["Jérémy Boulanger"],
   typeSpeed: 40,
@@ -37,17 +27,24 @@ let typed3 = new Typed(".typed", {
   loop: false,
 });
 
-// AOS
-AOS.init();
+// -------------
+// HEADER
+// -------------
+function scrollBanner() {
+  var scrollPos;
+  var headerText = document.querySelector("#about .header-paralax");
+  scrollPos = window.scrollY;
 
-// PORTFOLIO
-$(".image").click(function () {
-  $(".image").removeClass("active");
-  $(this).addClass("active");
-});
+  if (scrollPos <= 600) {
+    headerText.style.transform = "translateY(" + -scrollPos / 10 + "px" + ")";
+    headerText.style.opacity = 1 - scrollPos / 600;
+  }
+}
+window.addEventListener("scroll", scrollBanner);
 
+// -------------
 // PROGRESSBAR
-
+// -------------
 let delay = 500;
 $(".progress-bar").each(function (i) {
   $(this)
@@ -70,15 +67,15 @@ $(".progress-bar").each(function (i) {
     );
 });
 
-// HEADER
-function scrollBanner() {
-  var scrollPos;
-  var headerText = document.querySelector("#about .header-paralax");
-  scrollPos = window.scrollY;
+// -------------
+// PORTFOLIO
+// -------------
+$(".image").click(function () {
+  $(".image").removeClass("active");
+  $(this).addClass("active");
+});
 
-  if (scrollPos <= 600) {
-    headerText.style.transform = "translateY(" + -scrollPos / 10 + "px" + ")";
-    headerText.style.opacity = 1 - scrollPos / 600;
-  }
-}
-window.addEventListener("scroll", scrollBanner);
+// -------------
+// AOS
+// -------------
+AOS.init();

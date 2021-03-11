@@ -1,8 +1,9 @@
-/* GENERAL */
+/* --------------
+GENERAL
+----------------- */
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Lato", sans-serif;
   background: #f7faff;
@@ -24,7 +25,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 ul,
 ol {
   list-style: none;
@@ -52,11 +52,12 @@ section .heading h2 {
   margin: 0 auto 20px;
 }
 
-/* MENU */
+/* --------------
+MENU
+----------------- */
 .navbar {
   background-color: #282629;
   font-size: 12px;
-  /* border-bottom: 1px solid #f7faff; */
   letter-spacing: 0.3em;
   text-transform: uppercase;
   font-weight: bold;
@@ -77,7 +78,9 @@ section .heading h2 {
   border-style: none;
 }
 
-/* ABOUT */
+/* --------------
+ABOUT
+----------------- */
 #about {
   padding-top: 50px;
   background: linear-gradient(#2c5364, #203a43, #0f2027);
@@ -121,7 +124,9 @@ section .heading h2 {
   text-decoration: none;
 }
 
-/* SKILLS */
+/* --------------
+SKILLS
+----------------- */
 #skills {
   background: #f7faff;
 }
@@ -140,7 +145,9 @@ section .heading h2 {
   width: 0;
 }
 
-/* EXPERIENCE */
+/* --------------
+EXPERIENCE
+----------------- */
 #experience {
   background: linear-gradient(#0f2027, #203a43, #2c5364);
   clip-path: polygon(0 2%, 100% 0, 100% 99%, 0 96%);
@@ -235,7 +242,9 @@ section .heading h2 {
   color: #392d3b;
 }
 
-/* EDUCATION */
+/* --------------
+EDUCATION
+----------------- */
 #education {
   background: #f7faff;
 }
@@ -273,7 +282,9 @@ section .heading h2 {
   margin-bottom: 20px;
 }
 
-/* PORTFOLIO */
+/* --------------
+PORTFOLIO
+----------------- */
 #portfolio {
   background: linear-gradient(#2c5364, #203a43, #0f2027, #090a0f);
   clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 97%);
@@ -358,7 +369,9 @@ a:focus {
   opacity: 1;
 }
 
-/* INTERETS */
+/* --------------
+INTERETS
+----------------- */
 #interets {
   background: #f7faff;
 }
@@ -390,7 +403,9 @@ a:focus {
   font-style: italic;
 }
 
-/* FOOTER */
+/* --------------
+FOOTER
+----------------- */
 footer {
   padding: 20px 0 40px;
   height: 100%;
@@ -484,126 +499,6 @@ footer ul {
   padding-left: 0;
 }
 
-/* .footer-icons {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  max-width: 60%;
-}
-.network {
-  font-size: 4em;
-  border: 1px solid #b3aca7;
-  padding: 30px 45px;
-  color: #726659;
-  z-index: -1 !important;
-  border-radius: 50%;
-}
-.network:hover,
-textarea:hover,
-input:hover,
-.form-button:hover {
-  background: #b3aca7;
-  color: #e2dedb;
-  transition: all 0.3s ease-in-out;
-}
-.form-container {
-  padding-top: 20px;
-}
-#reused_form {
-  position: relative;
-  margin: 50px auto;
-}
-input {
-  font-size: 0.85em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  border: solid 1px #b3aca7;
-  border-bottom: none;
-}
-textarea {
-  width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  background: transparent;
-  outline: none;
-  color: #726659;
-  border: solid 1px #b3aca7;
-  resize: none !important;
-}
-input::placeholder,
-textarea::placeholder,
-input:focus::placeholder,
-textarea:focus::placeholder {
-  color: #aca49c;
-}
-input:hover::placeholder,
-textarea:hover::placeholder,
-input:hover:focus::placeholder,
-textarea:hover:focus::placeholder {
-  color: #e2dedb;
-}
-.form-button {
-  background: transparent;
-  border: solid 1px #b3aca7;
-  padding: 20px 75px;
-  margin: 14px 0 -20px 0;
-}
-.form-container h4 {
-  font-size: 2em;
-}
-#error_message {
-  color: red;
-  border: 1px solid red;
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 15px 15px 8px 15px;
-  box-shadow: 0 0 5px red;
-}
-#success_message {
-  color: green;
-  border: 1px solid green;
-  max-width: 400px;
-  margin: 150px auto;
-  padding: 50px;
-  box-shadow: 0 0 5px green;
-}
-.arrow {
-  margin: -20 auto;
-  padding-top: 15px;
-  animation: arrow linear 1.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes arrow {
-  0% {
-    transform: translateY(0px);
-  }
-  38% {
-    transform: translateY(8px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-.arrow a {
-  font-size: 3em;
-  border: none;
-  color: #726659;
-}
-.arrow:hover i {
-  transform: scale(1.6);
-  transition: 0.5s ease-in-out;
-  color: #726659;
-}
-footer p {
-  font-size: 0.9em;
-  letter-spacing: 0.3em;
-} */
-
 /*------------------
 MEDIA QUERIES ++
 -------------------- */
@@ -649,7 +544,6 @@ MEDIA QUERIES ++
 /*------------------
 STARS FOOTER
 -------------------- */
-
 #stars {
   width: 1px;
   height: 1px;
