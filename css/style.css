@@ -82,7 +82,11 @@ section .heading h2 {
   padding-top: 50px;
   background: linear-gradient(#2c5364, #203a43, #0f2027);
   clip-path: polygon(0 0, 100% 0, 100% 99%, 0 91%);
-  /* height: 800px; */
+  height: 800px;
+}
+.header-paralax {
+  position: fixed;
+  width: 100%;
 }
 .profile-picture {
   text-align: center;
@@ -354,11 +358,11 @@ a:focus {
   opacity: 1;
 }
 
-/* RECOMMANDATIONS */
-#recommandations {
+/* INTERETS */
+#interets {
   background: #f7faff;
 }
-#recommandations .heading h2 {
+#interets .heading h2 {
   color: #392d3b;
 }
 .fas.fa-chevron-left,
@@ -388,7 +392,6 @@ a:focus {
 
 /* FOOTER */
 footer {
-  /* background: #282629; */
   padding: 20px 0 40px;
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
@@ -602,7 +605,7 @@ footer p {
 } */
 
 /*------------------
-VERSION MOBILE
+MEDIA QUERIES ++
 -------------------- */
 
 @media (max-width: 768px) {
@@ -644,7 +647,7 @@ VERSION MOBILE
 }
 
 /*------------------
-snow
+STARS FOOTER
 -------------------- */
 
 #stars {
