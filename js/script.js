@@ -1,12 +1,12 @@
 // -------------
 // BURGER
 // -------------
-$(function () {
-  $(".navbar a, footer a").on("click", function (event) {
-    event.preventDefault();
-    window.open(event.currentTarget.href, '_blank')
-  });
-});
+// $(function () {
+//   $(".navbar a, footer a").on("click", function (event) {
+//     // event.preventDefault();
+//     // window.open(event.currentTarget.href, '_blank')
+//   });
+// });
 
 // -------------
 // TYPE SCRIPT
