@@ -37,10 +37,10 @@ body {
   
   .grid-container {
     display: grid;
-    grid-template-columns: 0.3fr 1fr 0.8fr;
+    grid-template-columns: 0.3fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 2rem 0rem;
-    grid-template-areas: "Navbar Left Right";
+    grid-template-areas: "Navbar skillbar softskills";
   }
   
   /* NAVBAR */
@@ -77,6 +77,56 @@ body {
     text-decoration: none;
   }
 
+/* LEFT */
+.skillbar{
+  grid-area: skillbar;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1rem 0px;
+  grid-template-areas:
+    "TitleL"
+    "DescriptionL";
+  padding: 1rem;
+}
+
+.TitleL{
+  grid-area: TitleL;
+  display: flex;
+  align-items: flex-end;
+}
+
+.DescriptionL{
+ grid-area: DescriptionL;
+
+}
+
+.progress{
+  margin-bottom: 1rem;
+}
+
+
+/* RIGHT */
+.softskills{
+  grid-area: softskills;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1rem 0px;
+  grid-template-areas:
+    "TitleR"
+    "DescriptionR";
+  padding: 1rem;
+}
+ .TitleR{
+   grid-area: TitleR;
+ }
+
+ .DescriptionR{
+  grid-area: DescriptionR;
+ }
+
+
 
   /* For presentation only, no need to copy the code below */
 .grid-container * {
@@ -96,20 +146,33 @@ MEDIA QUERIES ++
 -------------------- */
 
 @media (max-width: 768px) {
-  
-    .Navbar {
-      flex-direction: row;
-    }
-    nav ul li {
-      margin-top: 0.5rem;
-    }
-    nav ul {
-      flex-direction: row;
-    }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    gap: 0.2rem 1rem;
+    grid-template-areas:
+      "Navbar"
+      "skillbar"
+      "softskills";
   }
-  
-  @media (max-width: 425px) {
-    nav ul li a {
-      font-size: small;
-    }
+  img {
+    height: 40vh;
   }
+
+  .Navbar {
+    flex-direction: row;
+  }
+  nav ul li {
+    margin-top: 0.5rem;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 425px) {
+  nav ul li a {
+    font-size: small;
+  }
+}
