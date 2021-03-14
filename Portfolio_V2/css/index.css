@@ -1,0 +1,201 @@
+/* GENERAL */
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(-0.25turn, #2c5364, #203a43, #0f2027, #090a0f);
+}
+
+.grid-container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #fff;
+}
+h1,
+h2 {
+  font-family: "audiowide", sans-serif;
+  text-shadow: -1px -1px 1px #283655;
+}
+
+p {
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.8fr;
+  grid-template-rows: 1fr;
+  gap: 2rem 0rem;
+  grid-template-areas: "Navbar About Profil-pic";
+}
+
+/* NAVBAR */
+
+.Navbar {
+  grid-area: Navbar;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  margin-top: 2rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+nav ul li a:hover {
+  background: white;
+  color: #392d3b;
+  text-decoration: none;
+}
+
+/* ABOUT */
+
+.About {
+  grid-area: About;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 2fr 1fr;
+  gap: 1rem 0px;
+  grid-template-areas:
+    "Title"
+    "Description"
+    "button_about";
+  padding: 1rem;
+}
+
+.Title {
+  grid-area: Title;
+  display: flex;
+  align-items: flex-end;
+}
+
+.Description {
+  grid-area: Description;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.button_about {
+  grid-area: button_about;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+}
+.button1:hover {
+  background: white;
+  color: #392d3b;
+  text-decoration: none;
+}
+
+/* PHOTO */
+
+.Profil-pic {
+  grid-area: Profil-pic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.rounded-circle {
+  box-shadow: 0 0 0px #282629;
+}
+
+/* For presentation only, no need to copy the code below */
+.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.grid-container *:after {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*------------------
+MEDIA QUERIES ++
+-------------------- */
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    gap: 0.2rem 1rem;
+    grid-template-areas:
+      "Navbar"
+      "Profil-pic"
+      "About";
+  }
+  img {
+    height: 40vh;
+  }
+
+  .Navbar {
+    flex-direction: row;
+  }
+  nav ul li {
+    margin-top: 0.5rem;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 425px) {
+  nav ul li a {
+    font-size: small;
+  }
+  .button_about {
+    grid-area: button_about;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
