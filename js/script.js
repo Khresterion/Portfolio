@@ -27,35 +27,25 @@ window.addEventListener("scroll", scrollBanner);
 // -------------
 // PROGRESSBAR
 // -------------
-let delay = 500;
-$(".progress-bar").each(function (i) {
-  $(this)
-    .delay(delay * i)
-    .animate({ width: $(this).attr("aria-valuenow") + "%" }, delay);
 
-  $(this)
-    .prop("Counter", 0)
-    .animate(
-      {
-        Counter: $(this).text(),
-      },
-      {
-        duration: delay,
-        easing: "swing",
-        step: function (now) {
-          $(this).text(Math.ceil(now) + "%");
-        },
-      }
-    );
-});
 
 // -------------
 // PORTFOLIO
 // -------------
-$(".image").click(function () {
-  $(".image").removeClass("active");
-  $(this).addClass("active");
+const panels = document.querySelectorAll(".panel");
+
+panels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    removeActiveClasses();
+    panel.classList.add("active");
+  });
 });
+
+const removeActiveClasses = () => {
+  panels.forEach((panel) => {
+    panel.classList.remove("active");
+  });
+};
 
 // -------------
 // AOS

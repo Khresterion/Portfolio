@@ -1,122 +1,167 @@
 /* GENERAL */
 body {
-    font-family: "Lato", sans-serif;
-    background: linear-gradient(-0.25turn, #2c5364, #203a43, #0f2027, #090a0f);
-  }
-  
-  .grid-container {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: bold;
-    color: #fff;
-  }
-  h1,
-  h2 {
-    font-family: "audiowide", sans-serif;
-    text-shadow: -1px -1px 1px #283655;
-  }
-  
-  p {
-    color: #fff;
-  }
-  
-  ul,
-  ol {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 2rem 0rem;
-    grid-template-areas: "Navbar Portfolio";
-  }
-  
-  /* NAVBAR */
-  
-  .Navbar {
-    grid-area: Navbar;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  nav ul li {
-    margin-top: 2rem;
-  }
-  
-  nav ul li a {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: white;
-    display: flex;
-    padding: 0.2rem 0.7rem;
-    border-radius: 20px;
-    transition: all 0.3s ease-in 0s;
-  }
-  
-  nav ul li a:hover {
-    background: white;
-    color: #392d3b;
-    text-decoration: none;
-  }
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(-0.25turn, #2c5364, #203a43, #0f2027, #090a0f);
+}
+
+.grid-container {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: #fff;
+}
+h1,
+h2 {
+  font-family: "audiowide", sans-serif;
+  text-shadow: -1px -1px 1px #283655;
+}
+
+p {
+  color: #fff;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 1.2fr;
+  grid-template-rows: 1fr;
+  gap: 2rem 0rem;
+  grid-template-areas: "Navbar Portfolio";
+}
+
+/* NAVBAR */
+
+.Navbar div {
+  position: sticky;
+  top: 20vh;
+}
+
+.Navbar {
+  grid-area: Navbar;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li {
+  margin-top: 2rem;
+}
+
+nav ul li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+nav ul li a:hover {
+  background: white;
+  color: #392d3b;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  background: white;
+  color: #392d3b;
+  text-decoration: none;
+}
 
 /* PORTFOLIO */
 .Portfolio {
-    grid-area: Portfolio;
-    display: grid;
-    grid-template-columns: 1fr;
-   grid-template-rows: 0.2fr 1fr;
-   gap: 1rem 0px;
-   grid-template-areas:
+  grid-area: Portfolio;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr;
+  gap: 1rem 0px;
+  grid-template-areas:
     "Title"
-    "accordeon";
+    "accordian";
   padding: 1rem;
 }
- .Title{
-   grid-area: Title;
- }
+.Title {
+  grid-area: Title;
+}
 
-
-.accordeon {
-    grid-area: accordeon;
-   
-  }
+.accordian {
+  grid-area: accordian;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
   
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+}
+.item:hover{
+    flex: 7;
+  }
+
+
+.item-1 { 
+  background-color: #fff;
+}
+
+.item-2 { 
+  background-image: url('');
+}
+
+.item-3 { 
+  background-image: url('');
+}
+
+.item-4 { 
+  background-image: url('');
+}
+
+.item-5 { 
+  background-image: url('');
+}
 
 
 
-
-  /* For presentation only, no need to copy the code below */
+/* For presentation only, no need to copy the code below */
 .grid-container * {
-    border: 1px solid red;
-    position: relative;
-  }
-  
-  .grid-container *:after {
-    content: attr(class);
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  border: 1px solid red;
+  position: relative;
+}
 
-  /*------------------
+.grid-container *:after {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*------------------
 MEDIA QUERIES ++
 -------------------- */
 
@@ -128,7 +173,7 @@ MEDIA QUERIES ++
     gap: 0.2rem 1rem;
     grid-template-areas:
       "Navbar"
-      "accordeon";
+      "Portfolio";
   }
   img {
     height: 40vh;
@@ -136,6 +181,7 @@ MEDIA QUERIES ++
 
   .Navbar {
     flex-direction: row;
+    justify-content: center;
   }
   nav ul li {
     margin-top: 0.5rem;
@@ -143,6 +189,13 @@ MEDIA QUERIES ++
   nav ul {
     flex-direction: row;
   }
+  .accordian {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+  }
+  
 }
 
 @media (max-width: 425px) {

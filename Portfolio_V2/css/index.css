@@ -45,11 +45,16 @@ ol {
 
 /* NAVBAR */
 
+.Navbar div {
+  position: sticky;
+  top: 20vh;
+}
+
 .Navbar {
   grid-area: Navbar;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 nav ul {
@@ -72,6 +77,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+  background: white;
+  color: #392d3b;
+  text-decoration: none;
+}
+
+nav ul li a.active {
   background: white;
   color: #392d3b;
   text-decoration: none;
@@ -175,9 +186,12 @@ MEDIA QUERIES ++
   img {
     height: 40vh;
   }
-
+  .Navbar div {
+    position: sticky;
+  }
   .Navbar {
     flex-direction: row;
+    justify-content: center;
   }
   nav ul li {
     margin-top: 0.5rem;
