@@ -102,6 +102,8 @@ nav ul li a.active {
 }
 .Title {
   grid-area: Title;
+  display: flex;
+  align-items: flex-end;
 }
 
 .accordian {
@@ -127,15 +129,19 @@ nav ul li a.active {
 
 
 .item-1 { 
-  background-color: #fff;
+  background-color:white;
+  background-image:url(images/CVpage.png);
+
 }
 
 .item-2 { 
-  background-image: url('');
+  background-image: url("images/wtf.PNG");
+ 
 }
 
 .item-3 { 
   background-image: url('');
+ 
 }
 
 .item-4 { 

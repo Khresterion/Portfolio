@@ -48,6 +48,7 @@ ol {
 .Navbar div {
   position: sticky;
   top: 20vh;
+  overflow: hidden;
 }
 
 .Navbar {
@@ -56,6 +57,9 @@ ol {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+}
+.Navbar .icon {
+  display: none;
 }
 nav ul {
   display: flex;
@@ -148,7 +152,7 @@ nav ul li a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .rounded-circle {
@@ -188,6 +192,8 @@ MEDIA QUERIES ++
   }
   .Navbar div {
     position: sticky;
+    /* top: 0;
+    z-index: 9999; */
   }
   .Navbar {
     flex-direction: row;
@@ -197,7 +203,7 @@ MEDIA QUERIES ++
     margin-top: 0.5rem;
   }
   nav ul {
-    flex-direction: row;
+    /* flex-direction: row; */
   }
 }
 
@@ -211,5 +217,11 @@ MEDIA QUERIES ++
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background: #203a43;
   }
 }

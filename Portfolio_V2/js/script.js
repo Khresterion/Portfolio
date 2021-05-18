@@ -10,24 +10,25 @@ let typed3 = new Typed(".typed", {
 });
 
 // -------------
-// HEADER
+// ACTIVE BUTTONS
 // -------------
-function scrollBanner() {
-  var scrollPos;
-  var headerText = document.querySelector("#about .header-paralax");
-  scrollPos = window.scrollY;
+let buttons = document.querySelectorAll("a");
 
-  if (scrollPos <= 800) {
-    headerText.style.transform = "translateY(" + -scrollPos / 10 + "px" + ")";
-    headerText.style.opacity = 1 - scrollPos / 800;
-  }
-}
-window.addEventListener("scroll", scrollBanner);
-
+buttons.foreach((a) => {
+  a.addEventListener("click", function () {
+    buttons.foreach((a) => a.classList.remove("active"));
+    this.classList.add("active");
+  });
+});
 // -------------
-// PROGRESSBAR
+// NAVBAR
 // -------------
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
 
+navBarToggle.addEventListener("click", function () {
+  mainNav.classList.toggle("active");
+});
 // -------------
 // PORTFOLIO
 // -------------
