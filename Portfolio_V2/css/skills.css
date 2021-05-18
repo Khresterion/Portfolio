@@ -1,91 +1,9 @@
-/* GENERAL */
-body {
-  font-family: "Lato", sans-serif;
-  background: linear-gradient(-0.25turn, #2c5364, #203a43, #0f2027, #090a0f);
-}
-
-.grid-container {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-  color: #fff;
-}
-h1,
-h2 {
-  font-family: "audiowide", sans-serif;
-  text-shadow: -1px -1px 1px #283655;
-}
-
-p {
-  color: #fff;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 0.3fr 1fr 0.8fr;
   grid-template-rows: 1fr;
   gap: 2rem 0rem;
   grid-template-areas: "Navbar skillbar softskills";
-}
-
-/* NAVBAR */
-
-.Navbar div {
-  position: sticky;
-  top: 20vh;
-}
-
-.Navbar {
-  grid-area: Navbar;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-}
-nav ul {
-  display: flex;
-  flex-direction: column;
-}
-
-nav ul li {
-  margin-top: 2rem;
-}
-
-nav ul li a {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  display: flex;
-  padding: 0.2rem 0.7rem;
-  border-radius: 20px;
-  transition: all 0.3s ease-in 0s;
-}
-
-nav ul li a:hover {
-  background: white;
-  color: #392d3b;
-  text-decoration: none;
-}
-
-nav ul li a.active {
-  background: white;
-  color: #392d3b;
-  text-decoration: none;
 }
 
 /* LEFT */
@@ -107,18 +25,34 @@ nav ul li a.active {
 
 /* PROGRESS BARS */
 .bar-html {
-  background-color: #ff8000;
+  background-color: #e34c26;
   width: 80%;
 }
 
 .bar-css {
-  background-color: #000;
-  width: 80%;
+  background-color: #264de4;
+  width: 90%;
 }
 
 .bar-js {
-  background-color: #ff8000;
+  background-color: #f0db4f;
   width: 70%;
+}
+.bar-bootstrap {
+  background-color: #563d7c;
+  width: 80%;
+}
+.bar-php {
+  background-color: #8993be;
+  width: 75%;
+}
+.bar-mysql {
+  background-color: #00758f;
+  width: 90%;
+}
+.bar-symfony {
+  background-color: #000;
+  width: 20%;
 }
 
 .TitleL {
@@ -130,9 +64,24 @@ nav ul li a.active {
 .DescriptionL {
   grid-area: DescriptionL;
 }
+h6 {
+  text-align: center;
+  font-family: "audiowide", sans-serif;
+  text-shadow: -1px -1px 1px #283655;
+}
 
 .progress {
   margin-bottom: 1rem;
+}
+
+.php {
+  color: #8993be;
+}
+.symphony {
+  color: #000;
+}
+.bootstrap {
+  color: #563d7c;
 }
 
 /* RIGHT */
@@ -176,14 +125,20 @@ MEDIA QUERIES ++
     height: 40vh;
   }
 
+  .Navbar div {
+    position: sticky;
+    /* top: 0;
+    z-index: 9999; */
+  }
   .Navbar {
     flex-direction: row;
+    justify-content: center;
   }
   nav ul li {
     margin-top: 0.5rem;
   }
   nav ul {
-    /* flex-direction: row; */
+    flex-direction: row;
   }
   .progress {
     width: 90vw;
@@ -193,5 +148,18 @@ MEDIA QUERIES ++
 @media (max-width: 425px) {
   nav ul li a {
     font-size: small;
+  }
+  .button_about {
+    grid-area: button_about;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background: #203a43;
   }
 }

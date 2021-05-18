@@ -132,3 +132,14 @@ nav ul li a.active {
   background-color: #555;
   transition-duration: 1s;
 }
+
+/* SPANS */
+.green {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+.green:hover {
+  color: red;
+  transition: all 0.3s ease-in 0s;
+}
