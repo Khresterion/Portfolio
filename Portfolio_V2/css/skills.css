@@ -102,20 +102,23 @@ nav ul li a.active {
 }
 
 .progress {
-  width: 40vw;
+  width: 45vw;
 }
 
 /* PROGRESS BARS */
 .bar-html {
   background-color: #ff8000;
+  width: 80%;
 }
 
 .bar-css {
-  background-color: #ff8000;
+  background-color: #000;
+  width: 80%;
 }
 
 .bar-js {
   background-color: #ff8000;
+  width: 70%;
 }
 
 .TitleL {
@@ -154,19 +157,6 @@ nav ul li a.active {
   grid-area: DescriptionR;
 }
 
-/* For presentation only, no need to copy the code below */
-.grid-container * {
-  border: 1px solid red;
-  position: relative;
-}
-
-.grid-container *:after {
-  content: attr(class);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 /*------------------
 MEDIA QUERIES ++
 -------------------- */
@@ -193,7 +183,10 @@ MEDIA QUERIES ++
     margin-top: 0.5rem;
   }
   nav ul {
-    flex-direction: row;
+    /* flex-direction: row; */
+  }
+  .progress {
+    width: 90vw;
   }
 }
 

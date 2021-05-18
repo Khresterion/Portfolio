@@ -1,39 +1,15 @@
-/* GENERAL */
-body {
-  font-family: "Lato", sans-serif;
-  background: linear-gradient(-0.25turn, #2c5364, #203a43, #0f2027, #090a0f);
-}
-
-.grid-container {
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* SPANS */
+.green {
+  color: greenyellow;
   font-weight: bold;
-  color: #fff;
-}
-h1,
-h2 {
-  font-family: "audiowide", sans-serif;
-  text-shadow: -1px -1px 1px #283655;
 }
 
-p {
-  color: #fff;
+.green:hover {
+  color: red;
+  transition: all 0.3s ease-in 0s;
 }
 
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-}
+/* ABOUT */
 
 .grid-container {
   display: grid;
@@ -42,57 +18,6 @@ ol {
   gap: 2rem 0rem;
   grid-template-areas: "Navbar About Profil-pic";
 }
-
-/* NAVBAR */
-
-.Navbar div {
-  position: sticky;
-  top: 20vh;
-  overflow: hidden;
-}
-
-.Navbar {
-  grid-area: Navbar;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-}
-.Navbar .icon {
-  display: none;
-}
-nav ul {
-  display: flex;
-  flex-direction: column;
-}
-
-nav ul li {
-  margin-top: 2rem;
-}
-
-nav ul li a {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  display: flex;
-  padding: 0.2rem 0.7rem;
-  border-radius: 20px;
-  transition: all 0.3s ease-in 0s;
-}
-
-nav ul li a:hover {
-  background: white;
-  color: #392d3b;
-  text-decoration: none;
-}
-
-nav ul li a.active {
-  background: white;
-  color: #392d3b;
-  text-decoration: none;
-}
-
-/* ABOUT */
 
 .About {
   grid-area: About;
@@ -157,19 +82,6 @@ nav ul li a.active {
 
 .rounded-circle {
   box-shadow: 0 0 0px #282629;
-}
-
-/* For presentation only, no need to copy the code below */
-.grid-container * {
-  border: 1px solid red;
-  position: relative;
-}
-
-.grid-container *:after {
-  content: attr(class);
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /*------------------
