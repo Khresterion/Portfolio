@@ -101,6 +101,26 @@ h6 {
   grid-area: DescriptionR;
 }
 
+.button_about a {
+  color: #fff;
+}
+
+.button_about a .fa-steam:hover {
+  color: #000;
+  transition: all 0.3s ease-in 0s;
+  transform: translate(0, -10%);
+}
+.button_about a .fa-battle-net:hover {
+  color: #ace5ee;
+  transition: all 0.3s ease-in 0s;
+  transform: translate(0, -10%);
+}
+.button_about a .fa-discord:hover {
+  color: #7289d9;
+  transition: all 0.3s ease-in 0s;
+  transform: translate(0, -10%);
+}
+
 /*------------------
 MEDIA QUERIES ++
 -------------------- */

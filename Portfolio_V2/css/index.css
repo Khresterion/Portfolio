@@ -134,6 +134,15 @@
     align-items: center;
     flex-direction: column;
   }
+
+  .button1 {
+    font-size: small;
+  }
+
+  .fa-facebook,
+  .fa-github-square,
+  .fa-linkedin {
+  }
 }
 
 @media (max-width: 375px) {

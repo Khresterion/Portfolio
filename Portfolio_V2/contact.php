@@ -57,7 +57,7 @@ if (isset($_POST['send'])) {
       <textarea placeholder="What are we going to discuss ?" id="message" name="message" tabindex="5"></textarea>
     </fieldset>
     <!-- <fieldset> -->
-    <button name="send" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+    <button name="send" type="submit" id="contact-submit" data-submit="...Sending">SEND</button>
     <?php if ($success) : ?>
       <div class="alert alert-success alert-dismissible fade show" role="alert"><button type=" button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>

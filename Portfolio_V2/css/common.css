@@ -205,3 +205,9 @@ nav ul li a.active {
     -webkit-mask-position: -50%;
   }
 }
+
+@media (max-width: 425px) {
+  .button1 {
+    font-size: small;
+  }
+}
