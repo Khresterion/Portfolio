@@ -19,7 +19,7 @@ function callHeader(string $title, string $css)
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href=<?= $css ?>>
 
     </head>

@@ -1,7 +1,7 @@
-<?php require_once 'view_header.php' ?>
-<?php require_once 'view_footer.php' ?>
+<?php require_once 'view/view_header.php' ?>
+<?php require_once 'view/view_footer.php' ?>
 
-<?php callHeader("Contact", "../css/contact.css") ?>
+<?php callHeader("Contact", "css/contact.css") ?>
 
 <div id='stars'></div>
 <div id='stars2'></div>

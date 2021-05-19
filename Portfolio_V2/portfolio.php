@@ -1,7 +1,7 @@
-<?php require_once 'view_header.php' ?>
-<?php require_once 'view_footer.php' ?>
+<?php require_once 'view/view_header.php' ?>
+<?php require_once 'view/view_footer.php' ?>
 
-<?php callHeader("Portfolio", "../css/portfolio.css") ?>
+<?php callHeader("Portfolio", "css/portfolio.css") ?>
 
 <main class="grid-container">
     <?php callNav() ?>
