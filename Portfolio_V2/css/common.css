@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ------------------------------------------------------GENERAL------------------------------------------------------ */
 body {
   font-family: "Lato", sans-serif;
   background: linear-gradient(-0.25turn, #2c5364, #203a43, #0f2027, #090a0f);
@@ -33,13 +33,18 @@ p {
   color: #fff;
 }
 
+.reference {
+  color: #fff;
+  margin-left: 1em;
+}
+
 ul,
 ol {
   list-style: none;
   padding: 0;
 }
 
-/* NAVBAR */
+/* ------------------------------------------------------(NAV)SIDEBAR------------------------------------------------------ */
 
 .Navbar div {
   position: sticky;
@@ -100,6 +105,30 @@ nav ul li a.active {
   top: 0;
   left: 0;
 } */
+/* ------------------------------------------------------BUTTONS------------------------------------------------------ */
+.button_about {
+  grid-area: button_about;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.button1 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid white;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  transition: all 0.3s ease-in 0s;
+}
+.button1:hover {
+  background: white;
+  color: #392d3b;
+  text-decoration: none;
+}
 
 /* ------------------------------------------------------BOUTON TO TOP------------------------------------------------------ */
 #myBtn {
@@ -133,13 +162,46 @@ nav ul li a.active {
   transition-duration: 1s;
 }
 
-/* SPANS */
+/* ------------------------------------------------------SPANS------------------------------------------------------ */
 .green {
   color: greenyellow;
   font-weight: bold;
 }
 
 .green:hover {
-  color: red;
+  color: coral;
   transition: all 0.3s ease-in 0s;
+  letter-spacing: 0.1em;
+}
+
+.red {
+  color: coral;
+  font-weight: bold;
+}
+
+.red:hover {
+  color: greenyellow;
+  transition: all 0.3s ease-in 0s;
+  letter-spacing: 0.1em;
+}
+/* ------------------------------------------------------SHINE EFFECT SPAN------------------------------------------------------ */
+.effect-shine:hover {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
 }

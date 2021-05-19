@@ -9,7 +9,6 @@ function callFooter()
     <script src="../js/typed.min.js" type="text/javascript"></script>
     <script src="../js/script.js" type="text/javascript"></script>
 
-
     </body>
 
     </html>

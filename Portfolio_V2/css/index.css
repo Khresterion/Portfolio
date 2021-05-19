@@ -1,4 +1,4 @@
-/* ABOUT */
+/* ------------------------------------------------------ABOUT SECTION------------------------------------------------------ */
 
 .grid-container {
   display: grid;
@@ -35,31 +35,48 @@
   text-align: justify;
 }
 
-.button_about {
-  grid-area: button_about;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
+/* ------------------------------------------------------SOCIAL ICONS------------------------------------------------------ */
+
+.button_about a {
+  color: #fff;
 }
 
-.button1 {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  border: 1px solid white;
-  margin-top: 1rem;
-  padding: 1rem 1rem;
-  border-radius: 3px;
+.button_about a .fa-github-square:hover {
+  color: #000;
   transition: all 0.3s ease-in 0s;
-}
-.button1:hover {
-  background: white;
-  color: #392d3b;
-  text-decoration: none;
+  transform: translate(0, -10%);
 }
 
-/* PHOTO */
+.button_about a .fa-linkedin:hover {
+  color: #0e76a8;
+  transition: all 0.3s ease-in 0s;
+  transform: translate(0, -10%);
+}
+.button_about a .fa-facebook:hover {
+  background: #2b4170;
+  background: linear-gradient(120deg, #3b5998, #2b4170);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in 0s;
+  transform: translate(0, -10%);
+}
+.button_about a .fa-instagram:hover {
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in 0s;
+  transform: translate(0, -10%);
+}
+
+/* ------------------------------------------------------PROFIL PIC------------------------------------------------------ */
 
 .Profil-pic {
   grid-area: Profil-pic;
@@ -73,9 +90,7 @@
   box-shadow: 0 0 0px #282629;
 }
 
-/*------------------
-MEDIA QUERIES ++
--------------------- */
+/* ------------------------------------------------------MEDIA QUERIES------------------------------------------------------ */
 
 @media (max-width: 768px) {
   .grid-container {

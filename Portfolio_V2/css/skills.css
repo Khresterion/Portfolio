@@ -19,8 +19,17 @@
   padding: 1rem;
 }
 
+.progress-bar {
+  font-weight: bold;
+  font-size: larger;
+}
+
 .progress {
   width: 45vw;
+  margin-bottom: 2rem;
+}
+.progress:hover {
+  transform: scale(1.1);
 }
 
 /* PROGRESS BARS */
@@ -68,20 +77,6 @@ h6 {
   text-align: center;
   font-family: "audiowide", sans-serif;
   text-shadow: -1px -1px 1px #283655;
-}
-
-.progress {
-  margin-bottom: 1rem;
-}
-
-.php {
-  color: #8993be;
-}
-.symphony {
-  color: #000;
-}
-.bootstrap {
-  color: #563d7c;
 }
 
 /* RIGHT */
