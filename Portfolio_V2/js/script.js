@@ -71,5 +71,51 @@ $("a").click(function () {
 AOS.init();
 
 // -------------
-// scroll to top
+// Validation mail
 // -------------
+// function W3docs() {
+//   let name = document.forms["RegForm"]["name"];
+//   let email = document.forms["RegForm"]["mail"];
+//   let what = document.forms["RegForm"]["subject"];
+//   let comment = document.forms["RegForm"]["message"];
+
+//   if (name.value == "") {
+//     alert("Mettez votre nom.");
+//     name.focus();
+//     return false;
+//   }
+//   if (email.value == "") {
+//     alert("Mettez une adresse email valide.");
+//     email.focus();
+//     return false;
+//   }
+//   if (email.value.indexOf("@", 0) < 0) {
+//     alert("Mettez une adresse email valide.");
+//     email.focus();
+//     return false;
+//   }
+//   if (email.value.indexOf(".", 0) < 0) {
+//     alert("Mettez une adresse email valide.");
+//     email.focus();
+//     return false;
+//   }
+//   if (what.selectedIndex < 1) {
+//     alert("Mettez votre sujet.");
+//     what.focus();
+//     return false;
+//   }
+//   if (comment.value == "") {
+//     alert("Écrivez un commentaire.");
+//     comment.focus();
+//     return false;
+//   }
+//   return true;
+// }
+
+window.setTimeout(function () {
+  $(".alert")
+    .fadeTo(500, 0)
+    .slideUp(500, function () {
+      $(this).remove();
+    });
+}, 4000);
