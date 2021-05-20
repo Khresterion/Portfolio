@@ -2,7 +2,6 @@
 <?php require_once 'view/view_footer.php' ?>
 
 <?php callHeader("About Me", "css/index.css") ?>
-
 <main class="grid-container">
   <?php callNav() ?>
   <section class="About">
@@ -52,7 +51,7 @@
     </div>
   </section>
   <section class="Profil-pic">
-    <img src="../images/me.png" alt="photo" class="rounded-circle">
+    <img src="images/me.png" id="photo" alt="photo" title="Click on me if you want to remove that guy !" class="rounded-circle">
   </section>
 </main>
 

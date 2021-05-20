@@ -90,6 +90,7 @@ h6 {
     "TitleR"
     "DescriptionR";
   padding: 1rem;
+  text-align: justify;
 }
 .TitleR {
   grid-area: TitleR;
@@ -103,6 +104,7 @@ h6 {
 
 .button_about a {
   color: #fff;
+  margin-bottom: 1em;
 }
 
 .button_about a .fa-steam:hover {
@@ -142,8 +144,6 @@ MEDIA QUERIES ++
 
   .Navbar div {
     position: sticky;
-    /* top: 0;
-    z-index: 9999; */
   }
   .Navbar {
     flex-direction: row;
