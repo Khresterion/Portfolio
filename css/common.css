@@ -184,6 +184,10 @@ nav ul li a:hover {
   transition: all 0.3s ease-in 0s;
   letter-spacing: 0.1em;
 }
+
+.workInProgress:hover {
+  cursor: wait;
+}
 /* ------------------------------------------------------SHINE EFFECT SPAN------------------------------------------------------ */
 .effect-shine:hover {
   -webkit-mask-image: linear-gradient(

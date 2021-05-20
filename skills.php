@@ -7,7 +7,7 @@
     <?php callNav() ?>
     <div class="skillbar">
         <div class="TitleL">
-            <h2>&lt Compétences /&gt</h2>
+            <h2>&lt Pro skills /&gt</h2>
         </div>
         <div class="DescriptionL">
             <h6 class="effect-shine">FRONT-END Light Side</h6>
@@ -21,7 +21,7 @@
             </div>
             <!-- <h5>VANILLA JS</h5> -->
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bar-js" role="progressbar">VANILLA JS</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bar-js" role="progressbar">VANILLA JS / Jquery / Ajax</div>
             </div>
             <!-- <h5>BOOTSTRAP</h5> -->
             <div class="progress">
@@ -31,7 +31,7 @@
             <h6 class="effect-shine">BACK-END Dark Side</h6>
             <!-- <h5>PHP / OOP</h5> -->
             <div class="progress">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bar-php" role="progressbar">PHP / OOP</div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated bar-php" role="progressbar">PHP / Oop</div>
             </div>
             <!-- <h5>MYSQL</h5> -->
             <div class="progress">
@@ -41,6 +41,10 @@
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bar-symfony" role="progressbar">SYMFONY</div>
             </div>
+            <hr>
+            <p>I am also very interestd about cybersecurity and i develop by myself some skills in <span class="green">ethical hacking</span>, for later programming in <span class="red">python</span>. </p>
+            <p><span class="green">Upgrade skills</span> in programming langages i know is my first priority, but, i also learn gradually <span class="red">Vue.js</span>, <span class="red">Node.js</span>, <span class="red">postgresQL/GraphQL</span>, <span class="red">C#</span></p>
+            <p> <span class="workInProgress">... a long work in progress ...</span> </p>
         </div>
     </div>
     <section class="softskills">
@@ -50,14 +54,12 @@
         <div class="DescriptionR">
             <p>I worked 5 years as a client advisor and i am comfortable with relationships, to work in a team and to lead projects alone. I am <span class="green">proactive</span> and very <span class="green">creative</span>.</p>
 
+            <p>I like to learn by myself => i am <span class="green">self-taught</span> and <span class="green">independant</span> (<i>I still like having a coffee with colleagues !</i>). I like the challenge and collaborate on various projects, especially when it's crazy !
+                </br>I learned photography on my own, from scratch. You can see a sample <a href="https://photos.app.goo.gl/LK5x3ZQQGG6QS6yn9" target="blank"><span class="green">&lt HERE &gt</a>. You don't have to, I reassure you!</p>
 
-            <p>I like to learn by myself => i am <span class="green">self-taught</span>. I like the challenge and collaborate on various projects, especially when it's crazy !
-                </br>I learned photography on my own, from scratch. You can see a sample <a href="https://photos.app.goo.gl/LK5x3ZQQGG6QS6yn9" target="blank"><span class="green">&lt HERE &gt</a>. You don't have to, I reassure you!
-                I am also very interestd about cybersecurity and i develop by myself some skills in <span class="green">ethical hacking</span>, for later programming in <span class="red">python</span>. </p>
+            <p>As you can see from my professional experiences, I have a strong <span class="green">adaptability</span>. I also have knowledge in <span class="green">web-marketing</span> and <span class="green">management</span>. I have an <span class="green">entrepreneurial mind</span> and I also like to progress in these areas. </p>
 
-            <p><span class="green">Upgrade skills</span> in programming langages i know is my first priority, but, i also learn gradually <span class="red">Vue.js</span>, <span class="red">Node.js</span>, <span class="red">postgresQL/GraphQL</span>, <span class="red">C#</span>... a long work in progress ... </p>
-
-            <p>You can follow my progression here</p>
+            <p>You can follow my progression here :</p>
 
             <div class="button_about">
                 <a href="https://www.udemy.com/user/jems-bakerjeremy-boulanger/" target="blank" class="button1">Udemy</a>
