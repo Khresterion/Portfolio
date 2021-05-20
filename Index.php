@@ -28,10 +28,10 @@
       <ul>
         <div class="reference">
           <li>
-            8 months of intensive fullstack training at : <a href="https://www.afpa.fr/" target="blank"><span class="red">AFPA - Roubaix</span></a>
+            8 months of intensive fullstack training at : <a href="https://www.afpa.fr/" target="blank"><span class="red">&lt AFPA - Roubaix &gt</span></a>
           </li>
           <li>
-            3 months internship at : <a href="#" target="blank"><span class="red">Compagny</span></a>
+            3 months internship at : <a href="#" target="blank"><span class="red">&lt Compagny &gt</span></a>
           </li>
           <li>
             Developer since <span class="green">2021</span>
