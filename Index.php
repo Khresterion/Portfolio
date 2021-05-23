@@ -2,6 +2,7 @@
 <?php require_once 'view/view_footer.php' ?>
 
 <?php callHeader("About Me", "css/index.css") ?>
+
 <main class="grid-container">
   <?php callNav() ?>
   <section class="About">
@@ -38,7 +39,6 @@
           </li>
         </div>
       </ul>
-
     </div>
     <div class="button_about">
       <!-- <a href="tel:+647556242" class="button1">+6 47 55 62 42</a> -->

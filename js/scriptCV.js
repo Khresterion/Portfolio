@@ -85,7 +85,7 @@ $(document).ready(function () {
 // // -------------
 // // AOS
 // // -------------
-AOS.init();
+// AOS.init();
 
 // // -------------
 // // Validation mail
@@ -97,5 +97,20 @@ AOS.init();
 $(function () {
   $("#photo").click(function () {
     $("#photo").fadeOut(1000);
+  });
+});
+// // -------------
+// // TOGGLE PROGRESS BARS
+// // -------------
+
+$(function () {
+  $("#frontbutton").on("click", function () {
+    $("#front").toggle(500);
+  });
+});
+
+$(function () {
+  $("#backbutton").on("click", function () {
+    $("#back").toggle(500);
   });
 });

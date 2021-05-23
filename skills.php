@@ -5,7 +5,7 @@
 
 <main class="grid-container">
     <?php callNav() ?>
-    <div class="skillbar">
+    <section class="skillbar">
         <div class="TitleL">
             <h2>&lt Pro skills /&gt</h2>
         </div>
@@ -27,6 +27,7 @@
             <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bar-bootstrap" role="progressbar">BOOTSTRAP</div>
             </div>
+            <!-- </div> -->
             <hr>
             <h6 class="effect-shine">BACK-END Dark Side</h6>
             <!-- <h5>PHP / OOP</h5> -->
@@ -47,7 +48,7 @@
             <p><span class="green">Upgrade skills</span> in programming langages i know is my first priority, but, i also learn gradually <span class="red">Vue.js</span>, <span class="red">Node.js</span>, <span class="red">postgresQL/GraphQL</span>, <span class="red">C#</span></p>
             <p> <span class="workInProgress">... a long work in progress ...</span> </p>
         </div>
-    </div>
+    </section>
     <section class="softskills">
         <div class="TitleR">
             <h2>&lt Soft skills /&gt</h2>
@@ -68,7 +69,6 @@
             </div>
 
             <hr>
-
             <p>And because for me life is an eternal game where you <span class="green">win</span> and you <span class="red">lose</span>... </p>
 
             <div class="button_about">

@@ -14,7 +14,7 @@ if (isset($_POST['send'])) {
     $return = mail('axios.ludis@gmail.com', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['mail']);
     if ($return) {
       // echo '<p>Votre message a été envoyé.</p>';
-      $success = "<strong>Success!</strong> You have been signed in successfully!";
+      $success = "<strong>Success!</strong> Your message have been send successfully!";
     } else {
       // echo '<p>Erreur.</p>';
       $error = "There is an error here...";
@@ -72,7 +72,6 @@ if (isset($_POST['send'])) {
     <?php endif ?>
     <!-- </fieldset> -->
   </form>
-
 
 
   <!-- <footer class="text-center">
