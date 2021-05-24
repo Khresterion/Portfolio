@@ -43,7 +43,7 @@
     <div class="button_about">
       <!-- <a href="tel:+647556242" class="button1">+6 47 55 62 42</a> -->
       <a href="docs/CV_JEREMY.pdf" class="button1">Download CV</a>
-      <a href="https://www.linkedin.com/in/jeremy-boulanger-9274b5174/" target="blank"><i class="fab fa-linkedin fa-4x"></i></a>
+      <a href="https://www.linkedin.com/in/jeremy-boulanger/" target="blank"><i class="fab fa-linkedin fa-4x"></i></a>
       <a href="https://github.com/Khresterion" target="blank"><i class="fab fa-github-square fa-4x"></i></a>
       <a href="" target="blank"><i class="fab fa-instagram fa-4x"></i></a>
       <a href="" target="blank"><i class="fab fa-facebook fa-4x"></i></a>
