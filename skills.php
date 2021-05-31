@@ -43,9 +43,10 @@
                 <div class="progress-bar progress-bar-striped progress-bar-animated bar-symfony" role="progressbar">SYMFONY</div>
             </div>
             <hr>
-            <p>Adept of the <span class="green">MVC pattern</span></p>
+            <p>Adept of the <span class="green">MVC pattern</span>.</p>
+            <p>Trying to follow <span class="green">BEM</span> and <span class="green">OOCSS</span> principes.</p>
             <p>I am also very interestd about cybersecurity and i develop by myself some skills in <span class="green">ethical hacking</span>, for later programming in <span class="red">python</span>. </p>
-            <p><span class="green">Upgrade skills</span> in programming langages i know is my first priority, but, i also learn gradually <span class="red">Vue.js</span>, <span class="red">Node.js</span>, <span class="red">postgresQL/GraphQL</span>, <span class="red">C#</span></p>
+            <p><span class="green">Upgrade skills</span> in programming langages i know is my first priority, but, i also learn gradually <span class="red">Vue.js</span>, <span class="red">Node.js</span>, <span class="red">postgresQL/GraphQL</span>, <span class="red">C#</span>, <span class="red">Sass</span>...</p>
             <p> <span class="workInProgress">... a long work in progress ...</span> </p>
         </div>
     </section>
