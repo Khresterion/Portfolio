@@ -61,12 +61,12 @@ const typed3 = new Typed(".typed", {
 //   );
 // });
 
-$(document).ready(function () {
-  $("ul li a").click(function () {
-    $("li a").removeClass("active");
-    $(this).addClass("active");
-  });
-});
+// $(document).ready(function () {
+//   $("ul li a").click(function () {
+//     $("li a").removeClass("active");
+//     $(this).addClass("active");
+//   });
+// });
 
 // let mainNav = document.getElementById("js-menu");
 // let navBarToggle = document.getElementById("js-navbar-toggle");
@@ -103,14 +103,18 @@ $(function () {
 // // TOGGLE PROGRESS BARS
 // // -------------
 
-$(function () {
-  $("#frontbutton").on("click", function () {
-    $("#front").toggle(500);
-  });
-});
+// $(function () {
+//   $("#frontbutton").on("click", function () {
+//     $("#front").toggle(500);
+//   });
+// });
 
-$(function () {
-  $("#backbutton").on("click", function () {
-    $("#back").toggle(500);
-  });
+// $(function () {
+//   $("#backbutton").on("click", function () {
+//     $("#back").toggle(500);
+//   });
+// });
+
+$("a").click(function () {
+  $(this).addClass("active");
 });

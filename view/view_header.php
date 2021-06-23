@@ -45,7 +45,7 @@ function callNav()
             <button onclick="topFunction()" id="myBtn" title="Back to the Sky"></button>
             <div>
                 <ul>
-                    <li><a class="menu" href="Index.php">Me</a></li>
+                    <li><a class="menu" id="merde" href="Index.php">Me</a></li>
                     <li><a class="menu" href="skills.php">Skills</a></li>
                     <!-- <li><a href="">XP</a></li> -->
                     <li><a class="menu" href="portfolio.php">Portfolio</a></li>
